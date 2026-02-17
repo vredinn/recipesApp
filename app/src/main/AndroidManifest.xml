@@ -20,6 +20,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".PancakesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OmeletteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SaladActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SoupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PastaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SteakActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
