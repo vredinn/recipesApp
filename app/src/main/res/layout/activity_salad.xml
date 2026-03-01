@@ -57,11 +57,13 @@
             android:layout_marginBottom="16dp"
             android:text="@string/speach_title"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
             <TextView
                 android:id="@+id/tvCurrent"
                 android:layout_width="wrap_content"
@@ -73,11 +75,12 @@
 
             <SeekBar
                 android:id="@+id/seekBarSpeach"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/tvCurrent"
                 app:layout_constraintEnd_toStartOf="@id/tvTotal"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintStart_toEndOf="@id/tvCurrent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tvTotal"

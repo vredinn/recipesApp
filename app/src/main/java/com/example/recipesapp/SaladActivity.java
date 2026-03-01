@@ -2,8 +2,12 @@ package com.example.recipesapp;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +23,13 @@ public class SaladActivity extends AppCompatActivity {
     private Button btnPauseSpeach;
     private Button btnStopSpeach;
 
+    private TextView tvCurrent;
+    private TextView tvTotal;
+    private SeekBar seekBarSpeach;
+
+    private Handler handler;
+    private Runnable updateSeekBarRunnable;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,30 +41,111 @@ public class SaladActivity extends AppCompatActivity {
             return insets;
         });
 
+        handler = new Handler(Looper.getMainLooper());
+
         mpSpeach = MediaPlayer.create(this, R.raw.salad_speach);
 
         btnStartSpeach = findViewById(R.id.btnStart);
         btnPauseSpeach = findViewById(R.id.btnPause);
         btnStopSpeach = findViewById(R.id.btnStop);
 
+        tvCurrent = findViewById(R.id.tvCurrent);
+        tvTotal = findViewById(R.id.tvTotal);
+        seekBarSpeach = findViewById(R.id.seekBarSpeach);
+
+        if (mpSpeach != null) {
+            int duration = mpSpeach.getDuration();
+            seekBarSpeach.setMax(duration);
+            tvTotal.setText(millisecondsToTime(duration));
+        }
+
+        seekBarSpeach.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if (fromUser && mpSpeach != null) {
+                    mpSpeach.seekTo(progress);
+                    tvCurrent.setText(millisecondsToTime(progress));
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+            }
+        });
+
+        updateSeekBarRunnable = new Runnable() {
+            @Override
+            public void run() {
+                if (mpSpeach != null && mpSpeach.isPlaying()) {
+                    int currentPosition = mpSpeach.getCurrentPosition();
+                    seekBarSpeach.setProgress(currentPosition);
+                    tvCurrent.setText(millisecondsToTime(currentPosition));
+                }
+                handler.postDelayed(this, 100);
+            }
+        };
+
         btnStartSpeach.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mpSpeach.start();
+                if (mpSpeach != null) {
+                    mpSpeach.start();
+                    handler.post(updateSeekBarRunnable);
+                }
             }
         });
         btnPauseSpeach.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mpSpeach.pause();
+                if (mpSpeach != null) {
+                    mpSpeach.pause();
+                }
             }
         });
         btnStopSpeach.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mpSpeach.reset();
+                if (mpSpeach != null) {
+                    mpSpeach.stop();
+                    mpSpeach.prepareAsync();
+                    mpSpeach.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                        @Override
+                        public void onPrepared(MediaPlayer mp) {
+                            int duration = mp.getDuration();
+                            seekBarSpeach.setMax(duration);
+                            tvTotal.setText(millisecondsToTime(duration));
+                        }
+                    });
+                    seekBarSpeach.setProgress(0);
+                    tvCurrent.setText("00:00");
+                }
             }
         });
+    }
+
+    private String millisecondsToTime(int milliseconds) {
+        int seconds = (milliseconds / 1000) % 60;
+        int minutes = (milliseconds / (1000 * 60)) % 60;
+        return String.format("%02d:%02d", minutes, seconds);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mpSpeach != null) {
+            if (mpSpeach.isPlaying()) {
+                mpSpeach.stop();
+            }
+            mpSpeach.release();
+            mpSpeach = null;
+        }
+        if (handler != null) {
+            handler.removeCallbacks(updateSeekBarRunnable);
+        }
     }
 
 }
