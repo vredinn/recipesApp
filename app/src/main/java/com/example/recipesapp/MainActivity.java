@@ -3,6 +3,7 @@ package com.example.recipesapp;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
     private Set<String> currentFilters = new HashSet<>();
     private String currentSearch = "";
 
+    private MediaPlayer mpLaunch;
+    private MediaPlayer mpRecipe;
+
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(LocaleHelper.onAttach(newBase));
@@ -59,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
         recipesContainer = findViewById(R.id.recipesContainer);
         btnLanguage = findViewById(R.id.btnLanguage);
         tvNoRecipes = findViewById(R.id.tvNoRecipes);
+
+        mpLaunch = MediaPlayer.create(this, R.raw.launch);
+        mpRecipe = MediaPlayer.create(this, R.raw.recipe);
+
+        mpLaunch.start();
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -269,6 +278,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(v -> {
             Intent intent = new Intent(this, recipe.getActivityClass());
             startActivity(intent);
+            mpRecipe.start();
         });
         
         recipesContainer.addView(button);

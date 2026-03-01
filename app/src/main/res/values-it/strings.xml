@@ -10,6 +10,10 @@
     <string name="filter_lunch">Pranzo</string>
     <string name="filter_dinner">Cena</string>
     <string name="no_recipes_found">Ricetta non trovata</string>
+    <string name="speach_title">Doppiaggio della ricetta</string>
+    <string name="btn_start_speach">Inizia</string>
+    <string name="btn_pause_speach">Pausa</string>
+    <string name="btn_stop_speach">Interrompere</string>
     
     <!-- Recipe Names -->
     <string name="recipe_pancakes">Frittelle Soffici</string>

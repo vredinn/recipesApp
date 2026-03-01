@@ -10,6 +10,11 @@
     <string name="filter_lunch">Lunch</string>
     <string name="filter_dinner">Dinner</string>
     <string name="no_recipes_found">The recipe was not found</string>
+    <string name="speach_title">Voicing a recipe</string>
+    <string name="btn_start_speach">Start</string>
+    <string name="btn_pause_speach">Pause</string>
+    <string name="btn_stop_speach">Stop</string>
+
     
     <!-- Recipe Names -->
     <string name="recipe_pancakes">Fluffy Pancakes</string>
