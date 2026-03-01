@@ -51,6 +51,16 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSplashScreen().setOnExitAnimationListener(splashScreenView -> {
+
+            if (savedInstanceState == null) {
+                mpLaunch = MediaPlayer.create(this, R.raw.launch);
+                mpLaunch.start();
+                mpLaunch.setOnCompletionListener(mp -> mp.release());
+            }
+
+            splashScreenView.remove();
+        });
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
@@ -66,8 +76,6 @@ public class MainActivity extends AppCompatActivity {
 
         mpLaunch = MediaPlayer.create(this, R.raw.launch);
         mpRecipe = MediaPlayer.create(this, R.raw.recipe);
-
-        mpLaunch.start();
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

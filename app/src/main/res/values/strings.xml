@@ -1,7 +1,7 @@
 <resources>
     <!-- App Name -->
     <string name="app_name">Cooking assistant</string>
-    
+
     <!-- UI Elements -->
     <string name="search_hint">Search recipes...</string>
     <string name="btn_language">Language 🇬🇧</string>
@@ -15,7 +15,7 @@
     <string name="btn_pause_speach">Pause</string>
     <string name="btn_stop_speach">Stop</string>
 
-    
+
     <!-- Recipe Names -->
     <string name="recipe_pancakes">Fluffy Pancakes</string>
     <string name="recipe_omelette">Classic Omelette</string>
@@ -23,47 +23,47 @@
     <string name="recipe_soup">Tomato Soup</string>
     <string name="recipe_pasta">Spaghetti Carbonara</string>
     <string name="recipe_steak">Grilled Steak</string>
-    
+
     <!-- Recipe Categories -->
     <string name="category_breakfast">Breakfast</string>
     <string name="category_lunch">Lunch</string>
     <string name="category_dinner">Dinner</string>
-    
+
     <!-- Recipe Details - Pancakes -->
     <string name="pancakes_title">Fluffy Pancakes</string>
     <string name="pancakes_ingredients">Ingredients:</string>
     <string name="pancakes_ingredients_list">- 2 cups flour\n- 2 eggs\n- 1.5 cups milk\n- 2 tbsp sugar\n- 1 tsp baking powder\n- 1/2 tsp salt\n- Butter for cooking</string>
     <string name="pancakes_steps">Steps:</string>
     <string name="pancakes_steps_list">1. Mix flour, sugar, baking powder, and salt in a bowl.\n2. In another bowl, whisk eggs and milk together.\n3. Pour wet ingredients into dry ingredients and mix until smooth.\n4. Heat a pan with butter over medium heat.\n5. Pour batter onto the pan and cook until bubbles form.\n6. Flip and cook until golden brown.\n7. Serve with maple syrup or your favorite topping.</string>
-    
+
     <!-- Recipe Details - Omelette -->
     <string name="omelette_title">Classic Omelette</string>
     <string name="omelette_ingredients">Ingredients:</string>
     <string name="omelette_ingredients_list">- 3 eggs\n- 2 tbsp butter\n- Salt and pepper to taste\n- 1/4 cup cheese (optional)\n- Fresh herbs (optional)</string>
     <string name="omelette_steps">Steps:</string>
     <string name="omelette_steps_list">1. Crack eggs into a bowl and beat with a fork.\n2. Season with salt and pepper.\n3. Melt butter in a non-stick pan over medium heat.\n4. Pour in eggs and let cook for 1-2 minutes.\n5. Add cheese and herbs if desired.\n6. Fold omelette in half when almost set.\n7. Cook for another minute and serve hot.</string>
-    
+
     <!-- Recipe Details - Salad -->
     <string name="salad_title">Fresh Garden Salad</string>
     <string name="salad_ingredients">Ingredients:</string>
     <string name="salad_ingredients_list">- 1 head lettuce\n- 2 tomatoes\n- 1 cucumber\n- 1/4 red onion\n- Olive oil\n- Salt and pepper\n- Lemon juice</string>
     <string name="salad_steps">Steps:</string>
     <string name="salad_steps_list">1. Wash and chop lettuce into bite-sized pieces.\n2. Dice tomatoes and cucumber.\n3. Thinly slice red onion.\n4. Combine all vegetables in a large bowl.\n5. Drizzle with olive oil and lemon juice.\n6. Season with salt and pepper.\n7. Toss gently and serve fresh.</string>
-    
+
     <!-- Recipe Details - Soup -->
     <string name="soup_title">Tomato Soup</string>
     <string name="soup_ingredients">Ingredients:</string>
     <string name="soup_ingredients_list">- 6 ripe tomatoes\n- 1 onion\n- 2 cloves garlic\n- 2 cups vegetable broth\n- 1/2 cup cream\n- Fresh basil\n- Salt and pepper</string>
     <string name="soup_steps">Steps:</string>
     <string name="soup_steps_list">1. Chop tomatoes, onion, and garlic.\n2. Sauté onion and garlic in a pot until soft.\n3. Add tomatoes and cook for 10 minutes.\n4. Pour in vegetable broth and simmer for 20 minutes.\n5. Blend soup until smooth.\n6. Stir in cream and season to taste.\n7. Garnish with fresh basil and serve.</string>
-    
+
     <!-- Recipe Details - Pasta -->
     <string name="pasta_title">Spaghetti Carbonara</string>
     <string name="pasta_ingredients">Ingredients:</string>
     <string name="pasta_ingredients_list">- 400g spaghetti\n- 200g guanciale or bacon\n- 4 egg yolks\n- 100g pecorino cheese\n- Black pepper\n- Salt</string>
     <string name="pasta_steps">Steps:</string>
     <string name="pasta_steps_list">1. Cook spaghetti according to package directions.\n2. Cut guanciale into small pieces and fry until crispy.\n3. Mix egg yolks with grated pecorino cheese.\n4. Drain pasta, reserving some cooking water.\n5. Add hot pasta to the pan with guanciale.\n6. Remove from heat and quickly stir in egg mixture.\n7. Add pasta water if needed for creaminess.\n8. Season with black pepper and serve immediately.</string>
-    
+
     <!-- Recipe Details - Steak -->
     <string name="steak_title">Grilled Steak</string>
     <string name="steak_ingredients">Ingredients:</string>
@@ -76,4 +76,7 @@
     <string name="lang_english">English 🇬🇧</string>
     <string name="lang_russian">Русский 🇷🇺</string>
     <string name="lang_italian">Italiano 🇮🇹</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
