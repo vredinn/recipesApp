@@ -62,7 +62,7 @@
     <string name="pasta_ingredients">Ингредиенты:</string>
     <string name="pasta_ingredients_list">- 400 г спагетти\n- 200 г гуанчале или бекона\n- 4 желтка\n- 100 г пекорино\n- Чёрный перец\n- Соль</string>
     <string name="pasta_steps">Шаги:</string>
-    <string name="pasta_steps_list">1. Отварите спагетти по инструкции на упаковке.\n2. Нарежьте гуанчале маленькими кусочками и обжарьте до хрустящей корочки.\n3. Смешайте желтки с тёртым пекорино.\n4. Слейте воду с пасты, оставив немного воды для соуса.\n5. Добавьте горячую пасту в сковороду с гуанчале.\n6. Снимите с огня и быстро введите яичную смесь.\n7. Добавьте воду от пасты при необходимости для кремообразности.\n8. Приправьте чёрным перцем и подавайте сразу.</string>
+    <string name="pasta_steps_list">1. Отварите спагетти по инструкции на упаковке.\n2. Нарезьте гуанчале маленькими кусочками и обжарьте до хрустящей корочки.\n3. Смешайте желтки с тёртым пекорино.\n4. Слейте воду с пасты, оставив немного воды для соуса.\n5. Добавьте горячую пасту в сковороду с гуанчале.\n6. Снимите с огня и быстро введите яичную смесь.\n7. Добавьте воду от пасты при необходимости для кремообразности.\n8. Приправьте чёрным перцем и подавайте сразу.</string>
     
     <!-- Recipe Details - Steak -->
     <string name="steak_title">Стейк на Гриле</string>
@@ -83,4 +83,19 @@
     <string name="lang_english">English 🇬🇧</string>
     <string name="lang_russian">Русский 🇷🇺</string>
     <string name="lang_italian">Italiano 🇮🇹</string>
+
+    <!-- Timer -->
+    <string name="timer_start">Старт</string>
+    <string name="timer_pause">Пауза</string>
+    <string name="timer_reset">Сброс</string>
+    <string name="timer_edit_title">Установить время (мм:сс)</string>
+    
+    <!-- Timer labels -->
+    <string name="timer_label_eggs">Варка яиц</string>
+    <string name="timer_label_soup1">Готовка помидоров</string>
+    <string name="timer_label_soup2">Варка супа</string>
+    <string name="timer_label_omelette">Жарка омлета</string>
+    <string name="timer_label_steak1">Жарка стейка</string>
+    <string name="timer_label_steak2">Отдых стейка</string>
 </resources>
+

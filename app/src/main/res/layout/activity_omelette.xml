@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
     tools:context=".OmeletteActivity">
 
@@ -47,8 +48,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/omelette_steps_list"
-            android:textSize="14sp"/>
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:id="@+id/timers_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.recipesapp.TimerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:initialTimeMs="120000"
+                app:label="@string/timer_label_omelette"
+                app:soundRes="@raw/timer1"
+                app:isEditable="false" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
 </ScrollView>
+

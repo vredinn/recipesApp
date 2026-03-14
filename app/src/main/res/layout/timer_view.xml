@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:elevation="0dp">
+
+  <TextView
+      android:id="@+id/timer_label"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Timer"
+      android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+      android:layout_marginBottom="8dp"/>
+
+  <TextView
+      android:id="@+id/timer_time"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="10:00"
+      android:textAppearance="@style/TextAppearance.Material3.DisplayLarge"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:clickable="true"
+      android:focusable="true"
+      android:foreground="?attr/selectableItemBackground"
+      android:layout_marginBottom="16dp"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_start"
+        android:layout_marginEnd="8dp"
+        android:enabled="true"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_pause"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_pause"
+        android:layout_marginEnd="8dp"
+        android:enabled="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_reset"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_reset"
+        android:enabled="false"/>
+
+
+  </LinearLayout>
+
+</LinearLayout>
+

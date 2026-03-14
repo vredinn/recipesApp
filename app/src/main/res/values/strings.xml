@@ -84,4 +84,19 @@
     <string name="lang_english">English 🇬🇧</string>
     <string name="lang_russian">Русский 🇷🇺</string>
     <string name="lang_italian">Italiano 🇮🇹</string>
+
+    <!-- Timer -->
+    <string name="timer_start">Start</string>
+    <string name="timer_pause">Pause</string>
+    <string name="timer_reset">Reset</string>
+    <string name="timer_edit_title">Set time (mm:ss)</string>
+    
+    <!-- Timer labels -->
+    <string name="timer_label_eggs">Boiling eggs</string>
+    <string name="timer_label_soup1">Cook tomatoes</string>
+    <string name="timer_label_soup2">Simmer soup</string>
+    <string name="timer_label_omelette">Cook omelette</string>
+    <string name="timer_label_steak1">Grill steak</string>
+    <string name="timer_label_steak2">Rest steak</string>
 </resources>
+

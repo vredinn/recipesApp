@@ -1,6 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="FullscreenAttrs">
         <attr name="fullscreenBackgroundColor" format="color" />
         <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="TimerView">
+        <attr name="initialTimeMs" format="integer"/>
+        <attr name="label" format="string|reference"/>
+        <attr name="soundRes" format="reference"/>
+        <attr name="isEditable" format="boolean"/>
     </declare-styleable>
 </resources>
