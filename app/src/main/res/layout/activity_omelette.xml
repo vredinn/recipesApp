@@ -63,8 +63,7 @@
                 app:initialTimeMs="120000"
                 app:label="@string/timer_label_omelette"
                 app:soundRes="@raw/timer1"
-                app:isEditable="false" />
-
+                app:isEditable="true" />
         </LinearLayout>
 
     </LinearLayout>

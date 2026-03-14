@@ -1,7 +1,7 @@
 <resources>
     <!-- App Name -->
     <string name="app_name">Assistente di cucina</string>
-    
+
     <!-- UI Elements -->
     <string name="search_hint">Cerca ricette...</string>
     <string name="btn_language">Lingua 🇮🇹</string>
@@ -14,7 +14,7 @@
     <string name="btn_start_speach">Inizia</string>
     <string name="btn_pause_speach">Pausa</string>
     <string name="btn_stop_speach">Interrompere</string>
-    
+
     <!-- Recipe Names -->
     <string name="recipe_pancakes">Frittelle Soffici</string>
     <string name="recipe_omelette">Omelette Classica</string>
@@ -23,47 +23,47 @@
     <string name="recipe_pasta">Spaghetti Carbonara</string>
     <string name="recipe_steak">Bistecca alla Griglia</string>
     <string name="recipe_boiled_eggs">Uova Sode Perfette</string>
-    
+
     <!-- Recipe Categories -->
     <string name="category_breakfast">Colazione</string>
     <string name="category_lunch">Pranzo</string>
     <string name="category_dinner">Cena</string>
-    
+
     <!-- Recipe Details - Pancakes -->
     <string name="pancakes_title">Frittelle Soffici</string>
     <string name="pancakes_ingredients">Ingredienti:</string>
     <string name="pancakes_ingredients_list">- 2 tazze di farina\n- 2 uova\n- 1,5 tazze di latte\n- 2 cucchiai di zucchero\n- 1 cucchiaino di lievito\n- 1/2 cucchiaino di sale\n- Burro per la cottura</string>
     <string name="pancakes_steps">Passaggi:</string>
     <string name="pancakes_steps_list">1. Mescola farina, zucchero, lievito e sale in una ciotola.\n2. In un\'altra ciotola, sbatti le uova con il latte.\n3. Versa gli ingredienti liquidi in quelli secchi e mescola fino a ottenere un composto omogeneo.\n4. Scalda una padella con burro a fuoco medio.\n5. Versa l\'impasto e cuoci fino alla formazione di bolle.\n6. Gira e cuoci fino a doratura.\n7. Servi con sciroppo d\'acero o il tuo condimento preferito.</string>
-    
+
     <!-- Recipe Details - Omelette -->
     <string name="omelette_title">Omelette Classica</string>
     <string name="omelette_ingredients">Ingredienti:</string>
     <string name="omelette_ingredients_list">- 3 uova\n- 2 cucchiai di burro\n- Sale e pepe q.b.\n- 1/4 tazza di formaggio (opzionale)\n- Erbe fresche (opzionale)</string>
     <string name="omelette_steps">Passaggi:</string>
     <string name="omelette_steps_list">1. Rompi le uova in una ciotola e sbattile con una forchetta.\n2. Aggiungi sale e pepe.\n3. Sciogli il burro in una padella antiaderente a fuoco medio.\n4. Versa le uova e cuoci per 1-2 minuti.\n5. Aggiungi formaggio ed erbe se desiderato.\n6. Piegare l\'omelette a meta\' quando e\' quasi cotta.\n7. Cuoci per un altro minuto e servi caldo.</string>
-    
+
     <!-- Recipe Details - Salad -->
     <string name="salad_title">Insalata Fresca</string>
     <string name="salad_ingredients">Ingredienti:</string>
     <string name="salad_ingredients_list">- 1 cespo di lattuga\n- 2 pomodori\n- 1 cetriolo\n- 1/4 cipolla rossa\n- Olio d\'oliva\n- Sale e pepe\n- Succo di limone</string>
     <string name="salad_steps">Passaggi:</string>
     <string name="salad_steps_list">1. Lava e taglia la lattuga a pezzetti.\n2. Taglia pomodori e cetriolo a dadini.\n3. Affetta sottilmente la cipolla rossa.\n4. Combina tutte le verdure in una grande ciotola.\n5. Condisci con olio d\'oliva e succo di limone.\n6. Aggiungi sale e pepe.\n7. Mescola delicatamente e servi fresco.</string>
-    
+
     <!-- Recipe Details - Soup -->
     <string name="soup_title">Zuppa di Pomodoro</string>
     <string name="soup_ingredients">Ingredienti:</string>
     <string name="soup_ingredients_list">- 6 pomodori maturi\n- 1 cipolla\n- 2 spicchi d\'aglio\n- 2 tazze di brodo vegetale\n- 1/2 tazza di panna\n- Basilico fresco\n- Sale e pepe</string>
     <string name="soup_steps">Passaggi:</string>
     <string name="soup_steps_list">1. Taglia pomodori, cipolla e aglio.\n2. Soffriggi cipolla e aglio in una pentola fino a quando non saranno morbidi.\n3. Aggiungi i pomodori e cuoci per 10 minuti.\n4. Versa il brodo vegetale e lascia sobbollire per 20 minuti.\n5. Frulla la zuppa fino a renderla liscia.\n6. Aggiungi la panna e aggiusta di sale e pepe.\n7. Guarnisci con basilico fresco e servi.</string>
-    
+
     <!-- Recipe Details - Pasta -->
     <string name="pasta_title">Spaghetti Carbonara</string>
     <string name="pasta_ingredients">Ingredienti:</string>
     <string name="pasta_ingredients_list">- 400g spaghetti\n- 200g guanciale o pancetta\n- 4 tuorli\n- 100g pecorino romano\n- Pepe nero\n- Sale</string>
     <string name="pasta_steps">Passaggi:</string>
     <string name="pasta_steps_list">1. Cuoci gli spaghetti secondo le istruzioni.\n2. Taglia il guanciale a pezzetti e friggi fino a renderlo croccante.\n3. Mescola i tuorli con il pecorino grattugiato.\n4. Scola la pasta, conservando un po\' di acqua di cottura.\n5. Aggiungi la pasta calda nella padella con il guanciale.\n6. Rimuovi dal fuoco e aggiungi rapidamente il miscuglio di uova.\n7. Aggiungi acqua di cottura se necessario per la cremosita\'.\n8. Condisci con pepe nero e servi immediatamente.</string>
-    
+
     <!-- Recipe Details - Steak -->
     <string name="steak_title">Bistecca alla Griglia</string>
     <string name="steak_ingredients">Ingredienti:</string>
@@ -78,9 +78,27 @@
     <string name="boiled_eggs_steps">Passaggi:</string>
     <string name="boiled_eggs_steps_list">1. Porta a ebollizione una pentola d\'acqua.\n2. Immergi delicatamente le uova nell\'acqua bollente con un cucchiaio.\n3. Tuorlo liquido (vsmjatku): 4-5 minuti\n4. In camicia (meshochok): 6-7 minuti\n5. Duro (vkrutuju): 10-12 minuti\n6. Trasferisci immediatamente in un bagno di ghiaccio.\n7. Sbuccia sotto acqua corrente fredda e servi.</string>
 
+    <!-- Timer -->
+    <string name="timer_start">Avvia</string>
+    <string name="timer_pause">Pausa</string>
+    <string name="timer_reset">Resetta</string>
+    <string name="timer_edit_title">Imposta tempo timer</string>
+    <string name="timer_minutes_hint">Minuti</string>
+    <string name="timer_seconds_hint">Secondi</string>
+    <string name="timer_ok">OK</string>
+    <string name="timer_cancel">Annulla</string>
+
     <!-- Language Selection Dialog -->
     <string name="select_language">Seleziona Lingua</string>
     <string name="lang_english">English 🇬🇧</string>
     <string name="lang_russian">Русский 🇷🇺</string>
     <string name="lang_italian">Italiano 🇮🇹</string>
+
+    <!-- Timer labels -->
+    <string name="timer_label_eggs">Uova sode</string>
+    <string name="timer_label_soup1">Cuocere pomodori</string>
+    <string name="timer_label_soup2">Cuocere a fuoco lento</string>
+    <string name="timer_label_omelette">Cucinare frittata</string>
+    <string name="timer_label_steak1">Grigliare bistecca</string>
+    <string name="timer_label_steak2">Riposo bistecca</string>
 </resources>

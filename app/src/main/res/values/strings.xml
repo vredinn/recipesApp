@@ -89,7 +89,11 @@
     <string name="timer_start">Start</string>
     <string name="timer_pause">Pause</string>
     <string name="timer_reset">Reset</string>
-    <string name="timer_edit_title">Set time (mm:ss)</string>
+    <string name="timer_edit_title">Set timer time</string>
+    <string name="timer_minutes_hint">Minutes</string>
+    <string name="timer_seconds_hint">Seconds</string>
+    <string name="timer_ok">OK</string>
+    <string name="timer_cancel">Cancel</string>
     
     <!-- Timer labels -->
     <string name="timer_label_eggs">Boiling eggs</string>

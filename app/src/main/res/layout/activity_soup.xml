@@ -63,16 +63,14 @@
                 app:initialTimeMs="600000"
                 app:label="@string/timer_label_soup1"
                 app:soundRes="@raw/timer1"
-                app:isEditable="false" />
-
+                app:isEditable="true" />
             <com.example.recipesapp.TimerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:initialTimeMs="1200000"
                 app:label="@string/timer_label_soup2"
                 app:soundRes="@raw/timer2"
-                app:isEditable="false" />
-
+                app:isEditable="true" />
         </LinearLayout>
 
     </LinearLayout>

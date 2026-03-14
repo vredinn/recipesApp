@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+
 import androidx.core.content.ContextCompat;
 
 import com.google.android.material.button.MaterialButton;
@@ -75,7 +76,7 @@ public class TimerView extends LinearLayout {
     }
 
     mCurrentTimeMs = mInitialTimeMs;
-    updateTimeText();
+    mHandler.post(this::updateTimeText);
     updateButtons();
 
     mTimeText.setOnClickListener(v -> showEditDialog());
@@ -96,10 +97,12 @@ public class TimerView extends LinearLayout {
         mHandler.post(TimerView.this::updateTimeText);
       }
 
-      @Override
+@Override
       public void onFinish() {
         mIsRunning = false;
         playSound();
+        mCurrentTimeMs = mInitialTimeMs;
+        updateTimeText();
         updateButtons();
       }
     };
@@ -118,6 +121,7 @@ public class TimerView extends LinearLayout {
       if (mCountDownTimer != null) {
         mCountDownTimer.cancel();
       }
+      mIsRunning = false;
       mIsPaused = true;
       updateButtons();
     }
@@ -136,6 +140,7 @@ public class TimerView extends LinearLayout {
   }
 
   private void updateTimeText() {
+    if (!isAttachedToWindow()) return;
     long minutes = mCurrentTimeMs / 60000;
     long seconds = (mCurrentTimeMs / 1000) % 60;
     String timeStr = String.format("%02d:%02d", minutes, seconds);
@@ -150,54 +155,43 @@ public class TimerView extends LinearLayout {
 
   private void updateButtons() {
     mStartBtn.setEnabled(!mIsRunning);
-    mPauseBtn.setEnabled(mIsRunning);
+    mPauseBtn.setEnabled(mIsRunning && !mIsPaused);
     mResetBtn.setEnabled(mIsRunning || mIsPaused);
   }
 
   private void showEditDialog() {
-    if (!mIsEditable || mIsRunning || mIsPaused) return;
+    if (!mIsEditable || mIsRunning) return;
 
-    AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-    builder.setTitle("@string/timer_edit_title");
+    View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.timer_edit_dialog, null);
+    EditText etMinutes = dialogView.findViewById(R.id.et_minutes);
+    EditText etSeconds = dialogView.findViewById(R.id.et_seconds);
 
-    final EditText input = new EditText(getContext());
-    input.setInputType(InputType.TYPE_CLASS_NUMBER);
-    input.setText(formatMs(mInitialTimeMs));
-    builder.setView(input);
+    long min = mInitialTimeMs / 60000;
+    long sec = (mInitialTimeMs / 1000) % 60;
+    etMinutes.setText(String.valueOf(min));
+    etSeconds.setText(String.valueOf(sec));
 
-    builder.setPositiveButton("OK", (dialog, which) -> {
-      try {
-        String str = input.getText().toString().trim();
-        long ms = parseMmss(str);
-        if (ms > 0) {
-          mInitialTimeMs = ms;
-          resetTimer();
-        }
-      } catch (Exception e) {
-        // ignore
-      }
-    });
-    builder.setNegativeButton("Cancel", null);
-    builder.show();
+    new androidx.appcompat.app.AlertDialog.Builder(getContext())
+        .setTitle(R.string.timer_edit_title)
+        .setView(dialogView)
+        .setPositiveButton(R.string.timer_ok, (d, which) -> {
+          try {
+            int minutes = Integer.parseInt(etMinutes.getText().toString().trim());
+            int seconds = Integer.parseInt(etSeconds.getText().toString().trim());
+            long ms = ((minutes * 60L + seconds) * 1000L);
+            if (ms >= 1000) {
+              mInitialTimeMs = ms;
+              resetTimer();
+            }
+          } catch (NumberFormatException e) {
+            // ignore
+          }
+        })
+        .setNegativeButton(R.string.timer_cancel, null)
+        .show();
   }
 
-  private String formatMs(long ms) {
-    long min = ms / 60000;
-    long sec = (ms / 1000) % 60;
-    return min + ":" + String.format("%02d", sec);
-  }
 
-  private long parseMmss(String str) {
-    String[] parts = str.split(":");
-    if (parts.length != 2) return 0;
-    try {
-      int min = Integer.parseInt(parts[0]);
-      int sec = Integer.parseInt(parts[1]);
-      return (min * 60L + sec) * 1000L;
-    } catch (NumberFormatException e) {
-      return 0;
-    }
-  }
 
   private void playSound() {
     try {
@@ -213,18 +207,24 @@ public class TimerView extends LinearLayout {
   }
 
   public void cancelTimer() {
-    if (mCountDownTimer != null) {
-      mCountDownTimer.cancel();
-      mCountDownTimer = null;
-    }
-    if (mMediaPlayer != null && mMediaPlayer.isPlaying()) {
-      mMediaPlayer.stop();
-      mMediaPlayer.release();
-      mMediaPlayer = null;
+    try {
+      mHandler.removeCallbacksAndMessages(null);
+      if (mCountDownTimer != null) {
+        mCountDownTimer.cancel();
+        mCountDownTimer = null;
+      }
+      if (mMediaPlayer != null) {
+        if (mMediaPlayer.isPlaying()) {
+          mMediaPlayer.stop();
+        }
+        mMediaPlayer.release();
+        mMediaPlayer = null;
+      }
+    } catch (Exception e) {
+      // ignore
     }
     mIsRunning = false;
     mIsPaused = false;
-    mHandler.post(this::updateTimeText);
     updateButtons();
   }
 

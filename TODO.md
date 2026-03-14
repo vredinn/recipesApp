@@ -1,34 +1,21 @@
-# Timer Implementation for RecipesApp
+# Timer Improvements TODO
 
-Current step: 1/12
+## Steps:
 
-## Pending tasks:
+1. [x] Update TimerView.java: Fix pause/resume button states (start enabled when paused, pause disabled).
+2. [x] Update TimerView.java: Replace text dialog with Material 3 TimePickerDialog in showEditDialog().
+3. [x] Update TimerView.java: Fix crash on activity exit (Handler.removeCallbacksAndMessages, safe updateTimeText).
 
-- [x] 1. Create app/src/main/res/layout/timer_view.xml
-- [x] 2. Create app/src/main/java/com/example/recipesapp/TimerView.java
-- [x] 3. Update strings.xml with timer strings
-- [x] 4. Update strings-ru.xml with timer strings
-- [x] 5. Add timer_red color to colors.xml
+4. [x] Edit activity_boiled_eggs.xml: Set app:isEditable=\"true\" on all TimerView. (already true)
+5. [x] Edit activity_soup.xml: Set app:isEditable=\"true\" on all TimerView.
+6. [x] Edit activity_omelette.xml: Set app:isEditable=\"true\" on all TimerView.
+7. [x] Edit activity_steak.xml: Set app:isEditable=\"true\" on all TimerView.
+8. [x] [Optional] Add/update strings.xml if needed. (not needed)
+9. [x] All changes complete.
 
-- [ ] 4. Update strings-ru.xml with timer strings
-- [ ] 5. Add timer_red color to colors.xml
-- [x] 6. Edit activity_boiled_eggs.xml (add timers_container with 1 TimerView)
-- [x] 7. Edit activity_soup.xml (2 timers)
-- [x] 8. Edit activity_omelette.xml (1 timer)
-- [x] 9. Edit activity_steak.xml (2 timers)
-
-- [ ] 8. Edit activity_omelette.xml (1 timer)
-- [ ] 9. Edit activity_steak.xml (2 timers)
-- [x] 10. Update Java activities (onCreate inflate TimerViews if needed, onDestroy cancel)
-
-- [ ] 11. Add raw/timer1.mp3, timer2.mp3, etc. (user)
-- [ ] 12. Build/test
-
-## Notes:
-
-- Default times: eggs 10min editable, soup 10/20min, omelette 2min, steak 7min grill/5min rest
-- Sounds: different per timer
-- Material 3 buttons
-- Red <1min
-- Reset to initial
-- Cancel on activity destroy
+**Timer improvements done (updated per feedback):**
+- Material 3 styled dialog with Minutes/Seconds inputs (validation >=1s, click time text)
+- All timers editable
+- Reset restores initial (edited) time
+- Fixed pause/resume buttons
+- Enhanced crash fix in cancelTimer with try-catch

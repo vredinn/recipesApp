@@ -1,7 +1,7 @@
 <resources>
     <!-- App Name -->
     <string name="app_name">Кулинарный помощник</string>
-    
+
     <!-- UI Elements -->
     <string name="search_hint">Поиск рецептов...</string>
     <string name="btn_language">Язык 🇷🇺</string>
@@ -14,7 +14,7 @@
     <string name="btn_start_speach">Старт</string>
     <string name="btn_pause_speach">Пауза</string>
     <string name="btn_stop_speach">Стоп</string>
-    
+
     <!-- Recipe Names -->
     <string name="recipe_pancakes">Пышные Оладьи</string>
     <string name="recipe_omelette">Классический Омлет</string>
@@ -23,47 +23,47 @@
     <string name="recipe_pasta">Спагетти Карбонара</string>
     <string name="recipe_steak">Стейк на Гриле</string>
     <string name="recipe_boiled_eggs">Вареные яйца</string>
-    
+
     <!-- Recipe Categories -->
     <string name="category_breakfast">Завтрак</string>
     <string name="category_lunch">Обед</string>
     <string name="category_dinner">Ужин</string>
-    
+
     <!-- Recipe Details - Pancakes -->
     <string name="pancakes_title">Пышные Оладьи</string>
     <string name="pancakes_ingredients">Ингредиенты:</string>
     <string name="pancakes_ingredients_list">- 2 стакана муки\n- 2 яйца\n- 1,5 стакана молока\n- 2 ст.л. сахара\n- 1 ч.л. разрыхлителя\n- 1/2 ч.л. соли\n- Масло для жарки</string>
     <string name="pancakes_steps">Шаги:</string>
     <string name="pancakes_steps_list">1. Смешайте муку, сахар, разрыхлитель и соль в миске.\n2. В другой миске взбейте яйца с молоком.\n3. Влейте жидкие ингредиенты в сухие и перемешайте до однородности.\n4. Разогрейте сковороду с маслом на среднем огне.\n5. Вылейте тесто на сковороду и готовьте до образования пузырьков.\n6. Переверните и готовьте до золотистого цвета.\n7. Подавайте с кленовым сиропом или любимым топпингом.</string>
-    
+
     <!-- Recipe Details - Omelette -->
     <string name="omelette_title">Классический Омлет</string>
     <string name="omelette_ingredients">Ингредиенты:</string>
     <string name="omelette_ingredients_list">- 3 яйца\n- 2 ст.л. сливочного масла\n- Соль и перец по вкусу\n- 1/4 стакана сыра (по желанию)\n- Свежая зелень (по желанию)</string>
     <string name="omelette_steps">Шаги:</string>
     <string name="omelette_steps_list">1. Разбейте яйца в миску и взбейте вилкой.\n2. Посолите и поперчите.\n3. Растопите сливочное масло на сковороде на среднем огне.\n4. Влейте яйца и дайте готовиться 1-2 минуты.\n5. Добавьте сыр и зелень по желанию.\n6. Сложите омлет пополам, когда он почти готов.\n7. Готовьте ещё минуту и подавайте горячим.</string>
-    
+
     <!-- Recipe Details - Salad -->
     <string name="salad_title">Свежий Салат</string>
     <string name="salad_ingredients">Ингредиенты:</string>
     <string name="salad_ingredients_list">- 1 кочан салата\n- 2 помидора\n- 1 огурец\n- 1/4 красного лука\n- Оливковое масло\n- Соль и перец\n- Лимонный сок</string>
     <string name="salad_steps">Шаги:</string>
     <string name="salad_steps_list">1. Вымойте и нарежьте салат на кусочки.\n2. Нарежьте помидоры и огурец кубиками.\n3. Тонко нарежьте красный лук.\n4. Смешайте все овощи в большой миске.\n5. Полейте оливковым маслом и лимонным соком.\n6. Посолите и поперчите по вкусу.\n7. Аккуратно перемешайте и подавайте свежим.</string>
-    
+
     <!-- Recipe Details - Soup -->
     <string name="soup_title">Томатный Суп</string>
     <string name="soup_ingredients">Ингредиенты:</string>
     <string name="soup_ingredients_list">- 6 спелых помидоров\n- 1 луковица\n- 2 зубчика чеснока\n- 2 стакана овощного бульона\n- 1/2 стакана сливок\n- Свежий базилик\n- Соль и перец</string>
     <string name="soup_steps">Шаги:</string>
     <string name="soup_steps_list">1. Нарежьте помидоры, лук и чеснок.\n2. Обжарьте лук и чеснок в кастрюле до мягкости.\n3. Добавьте помидоры и готовьте 10 минут.\n4. Влейте овощной бульон и варите 20 минут.\n5. Измельчите суп до однородности.\n6. Добавьте сливки и приправьте по вкусу.\n7. Украсьте свежим базиликом и подавайте.</string>
-    
+
     <!-- Recipe Details - Pasta -->
     <string name="pasta_title">Спагетти Карбонара</string>
     <string name="pasta_ingredients">Ингредиенты:</string>
     <string name="pasta_ingredients_list">- 400 г спагетти\n- 200 г гуанчале или бекона\n- 4 желтка\n- 100 г пекорино\n- Чёрный перец\n- Соль</string>
     <string name="pasta_steps">Шаги:</string>
-    <string name="pasta_steps_list">1. Отварите спагетти по инструкции на упаковке.\n2. Нарезьте гуанчале маленькими кусочками и обжарьте до хрустящей корочки.\n3. Смешайте желтки с тёртым пекорино.\n4. Слейте воду с пасты, оставив немного воды для соуса.\n5. Добавьте горячую пасту в сковороду с гуанчале.\n6. Снимите с огня и быстро введите яичную смесь.\n7. Добавьте воду от пасты при необходимости для кремообразности.\n8. Приправьте чёрным перцем и подавайте сразу.</string>
-    
+    <string name="pasta_steps_list">1. Отварите спагетти по инструкции на упаковке.\n2. Нарежьте гуанчале маленькими кусочками и обжарьте до хрустящей корочки.\n3. Смешайте желтки с тёртым пекорино.\n4. Слейте воду с пасты, оставив немного воды для соуса.\n5. Добавьте горячую пасту в сковороду с гуанчале.\n6. Снимите с огня и быстро введите яичную смесь.\n7. Добавьте воду от пасты при необходимости для кремообразности.\n8. Приправьте чёрным перцем и подавайте сразу.</string>
+
     <!-- Recipe Details - Steak -->
     <string name="steak_title">Стейк на Гриле</string>
     <string name="steak_ingredients">Ингредиенты:</string>
@@ -78,24 +78,27 @@
     <string name="boiled_eggs_steps">Шаги:</string>
     <string name="boiled_eggs_steps_list">1. Доведите кастрюлю воды до кипения.\n2. Аккуратно опустите яйца в кипящую воду ложкой.\n3. Всмятку (жидкий желток): 4-5 минут\n4. В мешочек (мягкий желток): 6-7 минут\n5. Вкрутую: 10-12 минут\n6. Сразу переложите в ледяную воду.\n7. Очистите под проточной холодной водой и подавайте.</string>
 
+    <!-- Timer -->
+    <string name="timer_start">Старт</string>
+    <string name="timer_pause">Пауза</string>
+    <string name="timer_reset">Сброс</string>
+    <string name="timer_edit_title">Установить время таймера</string>
+    <string name="timer_minutes_hint">Минуты</string>
+    <string name="timer_seconds_hint">Секунды</string>
+    <string name="timer_ok">OK</string>
+    <string name="timer_cancel">Отмена</string>
+
     <!-- Language Selection Dialog -->
     <string name="select_language">Выберите язык</string>
     <string name="lang_english">English 🇬🇧</string>
     <string name="lang_russian">Русский 🇷🇺</string>
     <string name="lang_italian">Italiano 🇮🇹</string>
 
-    <!-- Timer -->
-    <string name="timer_start">Старт</string>
-    <string name="timer_pause">Пауза</string>
-    <string name="timer_reset">Сброс</string>
-    <string name="timer_edit_title">Установить время (мм:сс)</string>
-    
     <!-- Timer labels -->
     <string name="timer_label_eggs">Варка яиц</string>
-    <string name="timer_label_soup1">Готовка помидоров</string>
-    <string name="timer_label_soup2">Варка супа</string>
-    <string name="timer_label_omelette">Жарка омлета</string>
+    <string name="timer_label_soup1">Варка помидоров</string>
+    <string name="timer_label_soup2">Томление супа</string>
+    <string name="timer_label_omelette">Приготовление омлета</string>
     <string name="timer_label_steak1">Жарка стейка</string>
     <string name="timer_label_steak2">Отдых стейка</string>
 </resources>
-
