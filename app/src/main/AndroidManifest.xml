@@ -38,6 +38,9 @@
         <activity
             android:name=".SteakActivity"
             android:exported="false" />
+        <activity
+            android:name=".BoiledEggsActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

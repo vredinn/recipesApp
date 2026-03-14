@@ -23,6 +23,7 @@
     <string name="recipe_soup">Tomato Soup</string>
     <string name="recipe_pasta">Spaghetti Carbonara</string>
     <string name="recipe_steak">Grilled Steak</string>
+    <string name="recipe_boiled_eggs">Perfect Boiled Eggs</string>
 
     <!-- Recipe Categories -->
     <string name="category_breakfast">Breakfast</string>
@@ -71,12 +72,16 @@
     <string name="steak_steps">Steps:</string>
     <string name="steak_steps_list">1. Take steaks out of refrigerator 30 minutes before cooking.\n2. Season with salt, pepper, and olive oil.\n3. Heat a grill or cast iron pan until very hot.\n4. Sear steaks for 3-4 minutes per side.\n5. Add garlic, butter, and rosemary to the pan.\n6. Baste steaks with the butter.\n7. Let rest for 5 minutes before slicing.\n8. Serve with your favorite sides.</string>
 
+    <!-- Recipe Details - Boiled Eggs -->
+    <string name="boiled_eggs_title">Perfect Boiled Eggs</string>
+    <string name="boiled_eggs_ingredients">Ingredients:</string>
+    <string name="boiled_eggs_ingredients_list">- 4-6 large eggs\n- Water\n- 1 tsp salt (optional)</string>
+    <string name="boiled_eggs_steps">Steps:</string>
+    <string name="boiled_eggs_steps_list">1. Bring a pot of water to a rolling boil.\n2. Gently lower eggs into boiling water using a spoon.\n3. For runny yolks (soft-boiled): 4-5 minutes\n4. For soft yolks (medium-boiled): 6-7 minutes\n5. For hard-boiled yolks: 10-12 minutes\n6. Transfer immediately to an ice bath.\n7. Peel under cool running water and serve.</string>
+
     <!-- Language Selection Dialog -->
     <string name="select_language">Select Language</string>
     <string name="lang_english">English 🇬🇧</string>
     <string name="lang_russian">Русский 🇷🇺</string>
     <string name="lang_italian">Italiano 🇮🇹</string>
-    <string name="title_activity_splash">SplashActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

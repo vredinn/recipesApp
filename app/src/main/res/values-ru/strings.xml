@@ -22,6 +22,7 @@
     <string name="recipe_soup">Томатный Суп</string>
     <string name="recipe_pasta">Спагетти Карбонара</string>
     <string name="recipe_steak">Стейк на Гриле</string>
+    <string name="recipe_boiled_eggs">Вареные яйца</string>
     
     <!-- Recipe Categories -->
     <string name="category_breakfast">Завтрак</string>
@@ -69,6 +70,13 @@
     <string name="steak_ingredients_list">- 2 стейка (рибай или сирлоин)\n- 2 ст.л. оливкового масла\n- 2 зубчика чеснока\n- Свежий розмарин\n- Соль и перец\n- Сливочное масло</string>
     <string name="steak_steps">Шаги:</string>
     <string name="steak_steps_list">1. Достаньте стейки из холодильника за 30 минут до приготовления.\n2. Посолите, поперчите и полейте оливковым маслом.\n3. Разогрейте гриль или чугунную сковороду до высокой температуры.\n4. Обжаривайте стейки по 3-4 минуты с каждой стороны.\n5. Добавьте чеснок, сливочное масло и розмарин на сковороду.\n6. Поливайте стейки маслом со сковороды.\n7. Дайте отдохнуть 5 минут перед нарезкой.\n8. Подавайте с любимым гарниром.</string>
+
+    <!-- Recipe Details - Вареные яйца -->
+    <string name="boiled_eggs_title">Идеальные вареные яйца</string>
+    <string name="boiled_eggs_ingredients">Ингредиенты:</string>
+    <string name="boiled_eggs_ingredients_list">- 4-6 больших яиц\n- Вода\n- 1 ч.л. соли (по желанию)</string>
+    <string name="boiled_eggs_steps">Шаги:</string>
+    <string name="boiled_eggs_steps_list">1. Доведите кастрюлю воды до кипения.\n2. Аккуратно опустите яйца в кипящую воду ложкой.\n3. Всмятку (жидкий желток): 4-5 минут\n4. В мешочек (мягкий желток): 6-7 минут\n5. Вкрутую: 10-12 минут\n6. Сразу переложите в ледяную воду.\n7. Очистите под проточной холодной водой и подавайте.</string>
 
     <!-- Language Selection Dialog -->
     <string name="select_language">Выберите язык</string>

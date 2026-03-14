@@ -36,6 +36,7 @@ public class Recipe {
 
             new Recipe("pancakes", "recipe_pancakes", "breakfast", PancakesActivity.class),
             new Recipe("omelette", "recipe_omelette", "breakfast", OmeletteActivity.class),
+            new Recipe("boiled_eggs", "recipe_boiled_eggs", "breakfast", BoiledEggsActivity.class),
 
             new Recipe("salad", "recipe_salad", "lunch", SaladActivity.class),
             new Recipe("soup", "recipe_soup", "lunch", SoupActivity.class),

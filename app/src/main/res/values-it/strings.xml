@@ -22,6 +22,7 @@
     <string name="recipe_soup">Zuppa di Pomodoro</string>
     <string name="recipe_pasta">Spaghetti Carbonara</string>
     <string name="recipe_steak">Bistecca alla Griglia</string>
+    <string name="recipe_boiled_eggs">Uova Sode Perfette</string>
     
     <!-- Recipe Categories -->
     <string name="category_breakfast">Colazione</string>
@@ -68,7 +69,14 @@
     <string name="steak_ingredients">Ingredienti:</string>
     <string name="steak_ingredients_list">- 2 bistecche di manzo (ribeye o sirloin)\n- 2 cucchiai di olio d\'oliva\n- 2 spicchi d\'aglio\n- Rosmarino fresco\n- Sale e pepe\n- Burro</string>
     <string name="steak_steps">Passaggi:</string>
-    <string name="steak_steps_list">1. Tira fuori le bistecche dal frigorifero 30 minuti prima della cottura.\n2. Condisci con sale, pepe e olio d\'oliva.\n3. Scalda una griglia o una padella di ghisa fino a quando non e\' molto calda.\n4. Rosola le bistecche per 3-4 minuti per lato.\n5. Aggiungi aglio, burro e rosmarino nella padella.\n6. Bagna le bistecche con il burro fuso.\n7. Lascia riposare per 5 minuti prima di affettare.\n8. Servi con i tuoi contorni preferiti.</string>
+    <string name="steak_steps_list">1. Tira fuori le bistecche dal frigorifero 30 minuti prima della cottura.\n2. Condisci con sale, pepe e olio d\'oliva.\n3. Scalda una griglia o una padella di ghisa fino a quando non e\' molto calda.\n4. Rosola le bistecche per 3-4 minuti per lato.\n5. Aggiungi aglio, burro e rosmarino nella padella.\n6. Bagna le bistecche con il burro fuso.\n7. Lascia riposare per 5 минут prima di affettare.\n8. Servi con i tuoi contorni preferiti.</string>
+
+    <!-- Recipe Details - Uova Sode -->
+    <string name="boiled_eggs_title">Uova Sode Perfette</string>
+    <string name="boiled_eggs_ingredients">Ingredienti:</string>
+    <string name="boiled_eggs_ingredients_list">- 4-6 uova grandi\n- Acqua\n- 1 cucchiaino di sale (opzionale)</string>
+    <string name="boiled_eggs_steps">Passaggi:</string>
+    <string name="boiled_eggs_steps_list">1. Porta a ebollizione una pentola d\'acqua.\n2. Immergi delicatamente le uova nell\'acqua bollente con un cucchiaio.\n3. Tuorlo liquido (vsmjatku): 4-5 minuti\n4. In camicia (meshochok): 6-7 minuti\n5. Duro (vkrutuju): 10-12 minuti\n6. Trasferisci immediatamente in un bagno di ghiaccio.\n7. Sbuccia sotto acqua corrente fredda e servi.</string>
 
     <!-- Language Selection Dialog -->
     <string name="select_language">Seleziona Lingua</string>
